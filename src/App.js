@@ -13,25 +13,26 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-        <Navigate from='/CreatePost' to='/Register' />
+
+        <Route path="*" element={<Navigate from='/CreatePost' to='/Register'/>}/>
           <Route exact path='/' element={Home}>
-            <Home />
+            
           </Route>
 
           <Route exact path='/Register' element={<Register/>}>
-            <Register /> 
+            
           </Route>
 
           <Route exact path='/Login' element={<Login/>}>
-            <Login />
+            
           </Route>
 
           <Route exact path='/CreatePost' element={<CreatePost/>}>
-            <CreatePost />
+            
           </Route>
 
           <Route exact path='/AllPost' element={<AllPost/>}>
-            <AllPost />
+            
           </Route>
 
           <Route element=
