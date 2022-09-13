@@ -14,28 +14,28 @@ function App() {
         <Navbar />
         <Routes>
         <Navigate from='/CreatePost' to='/Register' />
-          <Route exact path='/' component={Home}>
+          <Route exact path='/' element={Home}>
             <Home />
           </Route>
 
-          <Route exact path='/Register' component={Register}>
+          <Route exact path='/Register' element={<Register/>}>
             <Register /> 
           </Route>
 
-          <Route exact path='/Login' component={Login}>
+          <Route exact path='/Login' element={<Login/>}>
             <Login />
           </Route>
 
-          <Route exact path='/CreatePost' component={CreatePost}>
+          <Route exact path='/CreatePost' element={<CreatePost/>}>
             <CreatePost />
           </Route>
 
-          <Route exact path='/AllPost' component={AllPost}>
+          <Route exact path='/AllPost' element={<AllPost/>}>
             <AllPost />
           </Route>
 
-          <Route component=
-            {NotFound}>
+          <Route element=
+            {<NotFound/>}>
 
           </Route>
 
